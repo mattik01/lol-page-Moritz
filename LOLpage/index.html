@@ -1,0 +1,81 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="header">
+            <h1>Today Moritz reached Gold in League of Legends 🎉</h1>
+            <img id="bff-img" src="https://lolg-cdn.porofessor.gg/img/d/summonerIcons/13.6/64/5637.png">
+            <h2 id="bday-age">Gold 4 KING 💅</h2>
+            <h4 id="bday-date">(appropriate rank after 6 seasons of LoL)</h4>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">Here's how happy I am for you today 🥳</h2>
+            <h3 class="gift-hint">(Hover over the box)</h3>
+            <div class="gift-img" id="gift-img-happy"></div>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">How people react when you enter the lobby 😍</h2>
+            <div class="gift-img" id="gift-img-hot"></div>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">How Moritz chooses a new main 👇</h2>
+            <div class="gift-img" id="gift-img-genius"></div>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">Lol Best girl according to Moritz 💪</h2>
+            <div class="gift-img" id="gift-img-badass"></div>
+        </div>
+        
+         <div class="gift-section">
+            <h2 class="gift-title">This one's for you, my friend 🥂</h2>
+            <div class="gift-img" id="gift-img-cheers"></div>
+        </div>
+        
+        <p id="footer"> Time until my hand works again:</p>
+        <!-- Display the countdown timer in an element -->
+
+        <!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Apr 11, 2023 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</script>
+        
+    </body>
+</html>
